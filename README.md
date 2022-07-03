@@ -16,3 +16,9 @@ This is an experiment to grow full stack experience
 * Other routes available are:
 * * `https://localhost:3001/users`
 * * `https://localhost:3001/users/1`
+
+## Current Technologies
+* Node.js
+* ejs
+* HTML
+* Javascript
