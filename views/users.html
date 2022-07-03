@@ -5,10 +5,11 @@
   <div class="container">
     <div class="jumbotron">
       <h1>Users</h1>
-      <a href="http://localhost:3001/users/1">Derek</a>
+      <% for (var i = 0; i < users.length; i++) { %>
+        <a href="http://localhost:3001/users/<%=i%>"><%= users[i].firstName %></a><br/>
+      <% } %>
     </div>
   </div>
 
   </body>
-
 </html>

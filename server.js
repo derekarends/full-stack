@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -13,7 +14,10 @@ app.get('/', function(req, res) {
 });
 
 app.get('/users', function(req, res) {
-  res.render('users.html');
+  let fileData = fs.readFileSync('./data/users.json');
+  let users = JSON.parse(fileData);
+
+  res.render('users.html', {users});
 });
 
 app.get('/users/:id', function(req, res) {
