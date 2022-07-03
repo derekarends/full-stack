@@ -19,6 +19,7 @@ This is an experiment to grow full stack experience
 
 ## Current Technologies
 * Node.js
+* express
 * ejs
 * HTML
 * Javascript
